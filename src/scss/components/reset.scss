@@ -1,0 +1,165 @@
+// ===================================================================================================================================================================================================================================================================================================================================================================================================================================
+// ===================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+// reset
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  // text-decoration-skip-ink: none;
+  list-style: none;
+  user-select: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+  letter-spacing: -0.04em;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+legend,
+menu,
+nav,
+section {
+  display: block;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+button,
+input,
+select,
+textarea,
+*::placeholder {
+  font: inherit;
+  color: inherit;
+}
+
+button,
+label,
+input[type="submit"] {
+  display: inline-block;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+label,
+select,
+input[type="radio"],
+input[type="file"],
+input[type="checkbox"],
+input[type="range"],
+summary {
+  cursor: pointer;
+}
+
+
+input[type="radio"],
+input[type="checkbox"],
+select {
+  appearance: none;
+}
+
+
+input[type="text"],
+textarea {
+  &::placeholder {
+  }
+  &:valid {
+  }
+  &:invalid {
+  }
+  &:not(:focus):invalid {
+  }
+}
+
+::selection {
+}
+
+:focus {
+  outline: 0;
+}
+
+section {
+}
+
+// ===================================================================================================================================================================================================================================================================================================================================================================================================================================
+// ===================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+// form
+
+form {
+  z-index: 1;
+  margin-top: 6.4rem;
+  background-color: var(--color-2);
+  padding: 10px;
+  border-radius: 24px;
+  // min-height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  @media (max-width: 480px) {
+    display: grid;
+  }
+}
+
+input[type="email"] {
+  // max-height: 100%;
+  padding: 20px 10px 20px 20px;
+  border-radius: 16px;
+  &::placeholder {
+    transition: color var(--transition-1), transform var(--transition-1);
+  }
+  transition: outline var(--transition-1);
+  &:focus {
+    outline: 2px solid var(--color-6);
+    &::placeholder {
+      transform: translateY(-100%) scale(0.9);
+      color: var(--color-6);
+      // font-size: 12px;
+    }
+  }
+  &::selection {
+    background-color: var(--color-6);
+  }
+  caret-color: var(--color-6);
+}
+
+button[type="submit"] {
+  background-color: var(--color-1);
+  color: var(--color-2);
+  padding: 2rem 4.5rem;
+  border-radius: 16px;
+  transition: background-color var(--transition-1);
+  @media (any-hover: hover) {
+  &:hover {
+  background-color: var(--color-9);
+  }
+  }
+}

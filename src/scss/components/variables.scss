@@ -1,0 +1,106 @@
+// ===================================================================================================================================================================================================================================================================================================================================================================================================================================
+// ===================================================================================================================================================================================================================================================================================================================================================================================================================================
+
+// variables
+
+:root {
+
+  //        Light                    300    
+  //        Regular (Normal)         400    
+  //        Medium                   500    
+  //        Semi-bold                600    
+  //        Bold                     700    
+  //        Extra-bold               800    
+  //        Black                    900    
+
+  // font
+  --font-1: 500 14px / calc(17 / 14 * 100%) "Inter";
+  --font-2: 500 16px / calc(19 / 16 * 100%) "Inter";
+  --font-3: 400 16px / calc(28 / 16 * 100%) "Inter";
+  --font-4: 600 18px / calc(26 / 18 * 100%) "Inter";
+  --font-5: 700 12px / calc(15 / 12 * 100%) "Inter";
+  --font-6: 400 2.4rem / calc(30 / 24 * 100%) "Lobster";
+  --font-7: 600 2.4rem / calc(32 / 24 * 100%) "Inter";
+  --font-8: 600 14px / calc(17 / 14 * 100%) "Inter";
+  --font-9: 600 4.8rem / calc(58 / 48 * 100%) "Inter";
+  --font-10: 500 18px / calc(22 / 18 * 100%) "Inter";
+
+  --font-11: 700 16px / calc(19 / 16 * 100%) "Inter";
+  --font-12: 400 18px / calc(22 / 18 * 100%) "Inter";
+  --font-13: 600 20px / calc(28 / 20 * 100%) "Inter";
+  --font-14: 700 18px / calc(22 / 18 * 100%) "Inter";
+  --font-15: 600 6.4rem / calc(77 / 64 * 100%) "Inter";
+  --font-16: 600 3.6rem / calc(44 / 36 * 100%) "Inter";
+  --font-17: 400 14px / calc(24 / 14 * 100%) "Inter";
+  --font-18: 500 12px / calc(20 / 12 * 100%) "Inter";
+  --font-19: 400 9px / calc(10 / 9 * 100%) "SF";
+  --font-20: 600 10px / calc(14 / 10 * 100%) "SF";
+  @media (max-width: 992px) {
+    --font-9: 600 24px / calc(30 / 24 * 100%) "Inter";
+  }
+  @media (max-width: 992px) {
+    --font-3: 400 14px / calc(24 / 14 * 100%) "Inter";
+  }
+  @media (max-width: 480px) {
+    --font-6: 400 3rem / calc(42 / 30 * 100%) "Lobster";
+    --font-7: 600 3rem / calc(42 / 30 * 100%) "Inter";
+  }
+
+  // transition
+  --transition-1: 0.3s;
+  --transition-2: 0.5s;
+
+  // background
+  --background-1: center/cover no-repeat;
+  --background-2: center/cover fixed;
+  --background-3: right 5px top 50%/2rem no-repeat;
+
+  --spoilerMedia: 992px;
+
+  // color
+  --color-1: #000000;
+  --color-2: #FFFFFF;
+  --color-3: #C4C4C4;
+  --color-4: #262626;
+  --color-5: #DBE2E5;
+  --color-6: #FF6363;
+  --color-7: #E7F9FD;
+  --color-8: linear-gradient(180deg, rgba(231, 249, 253, 0) 0%, #E7F9FD 100%);
+  --color-9: #3897F0;
+  --color-10: rgba(0, 0, 0, 0.15);
+  --color-11: linear-gradient(180deg, #357355 0%, #1D483B 100%);
+  --color-12: #E7FAFE;
+  --color-13: rgba(255, 255, 255, 0.6);
+
+  --color-14: #3183cf;
+
+  --twitter: #1da1f2;
+  --facebook: #3b5998;
+  --instagram: #833ab4;
+
+  // clip path
+  --triangle: polygon(0 0, 50% 100%, 100% 0);
+  --cross-5: polygon(0 45%, 45% 45%, 45% 0, 55% 0, 55% 45%, 100% 45%, 100% 55%, 55% 55%, 55% 100%, 45% 100%, 45% 55%, 0 55%);
+
+  // cross
+  --cross: linear-gradient(45deg, var(--cross-color-2) 45%, var(--cross-color-1) 46%, var(--cross-color-1) 55%, var(--cross-color-2) 56%),
+          linear-gradient(-45deg, var(--cross-color-2) 45%, var(--cross-color-1) 46%, var(--cross-color-1) 55%, var(--cross-color-2) 56%);
+  --cross-color-1: var(--color-9);
+  --cross-color-2: transparent;
+
+   // plus
+  --plus: linear-gradient(0deg, var(--plus-color-2) 45%, var(--plus-color-1) 46%, 
+                                  var(--plus-color-1) 55%, var(--plus-color-2) 56%),
+          linear-gradient(90deg, var(--plus-color-2) 45%, var(--plus-color-1) 46%,
+                                  var(--plus-color-1) 55%, var(--plus-color-2) 56%);
+  --plus-color-1: gold;
+  --plus-color-2: transparent;
+
+  // minus
+  --minus: linear-gradient(0deg, var(--minus-color-2) 45%, var(--minus-color-1) 46%, var(--minus-color-1) 55%, var(--minus-color-2) 56%);
+  --minus-color-1: gold;
+  --minus-color-2: transparent;
+
+}
+
+// :root.dark-theme {}

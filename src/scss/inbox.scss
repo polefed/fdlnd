@@ -1,0 +1,35 @@
+.inbox-section {
+  padding: 8rem 10px;
+  &__container {
+    background-color: var(--color-7);
+    padding: 8rem 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 44.2rem;
+    border-radius: 60px;
+    overflow: hidden;
+    position: relative;
+    &:after,
+    &:before {
+      position: absolute;
+      // z-index: 1;
+      content: '';
+    }
+    &:before {
+      width: 41rem;
+      height: 40rem;
+      bottom: -25%;
+      left: -5%;
+      // transform: rotate(30deg);
+      background: url(../img/inbox-1.png) var(--background-1);
+    }
+    &:after {
+      width: 47rem;
+      height: 35.6rem;
+      right: -10%;
+      bottom: -35%;
+      background: url(../img/inbox-2.png) var(--background-1);
+    }
+  }
+}

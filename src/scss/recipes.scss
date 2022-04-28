@@ -1,0 +1,75 @@
+// ===================================================================================================================================================================================================================================================================================================================================================================================================================================
+// ===================================================================================================================================================================================================================================================================================================================================================================================================================================
+.recipes-subtitle {
+  margin-bottom: 8rem;
+}
+.recipes {
+  grid-template-columns: repeat(3, 1fr);
+  // grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+  > li {
+    // height: 100%;
+    background: var(--color-8);
+    gap: 2.4rem;
+    padding: 1.6rem 1.6rem 3.2rem 1.6rem;
+    &:nth-child(6) {
+      padding: 4rem 2.2rem 0 2.2rem;
+      gap: 0;
+      background: var(--color-11);
+      color: var(--color-2);
+       // padding: 0;
+    // display: grid;
+    // justify-content: center;
+    // justify-content: space-between;
+    justify-content: flex-end;
+    text-align: center;
+    @media (max-width: 1200px) {
+      justify-content: center;
+    }
+    div {
+      // flex: 0 0 354px;
+      // max-width: 354px;
+      padding-bottom: 88.5%;
+      position: relative;
+      z-index: 1;
+      &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url(../img/recipes-post-star.png) var(--background-1);
+      }
+      &:after {
+        position: absolute;
+        content: attr(data-text);
+        bottom: 3.2rem;
+        left: 50%;
+        transform: translateX(-50%);
+        letter-spacing: -0.02em;
+        color: var(--color-13);
+        
+      }
+    }
+    p {
+      font: var(--font-6);
+      @media (min-width: 1201px) {
+        max-width: 172px;
+        margin: 0 auto;
+      }
+    }
+    }
+  }
+  a {
+    // flex: 1 1 100%;
+    padding-bottom: 62.5%;
+    border-radius: 10px;
+  }
+  p {
+    font: var(--font-7);
+    span {
+      position: sticky;
+      left: 0;
+    }
+  }
+}

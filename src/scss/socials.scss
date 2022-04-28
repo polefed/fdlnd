@@ -1,0 +1,39 @@
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  li {
+    &:nth-child(1) {
+      @media (any-hover: hover) {
+        &:hover {
+          path {
+            fill: var(--facebook);
+          }
+        }
+      }
+    }
+    &:nth-child(2) {
+      @media (any-hover: hover) {
+        &:hover {
+          path {
+            fill: var(--twitter);
+          }
+        }
+      }
+    }
+    &:nth-child(3) {
+      @media (any-hover: hover) {
+        &:hover {
+          path {
+            fill: var(--instagram);
+          }
+        }
+      }
+    }
+    svg {
+      path {
+        transition: fill var(--transition-1);
+      }
+    }
+  }
+}
