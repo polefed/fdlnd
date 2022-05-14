@@ -138,17 +138,17 @@ input[type="email"] {
   }
   transition: outline var(--transition-1);
   &:focus {
-    outline: 2px solid var(--color-6);
+    outline: 2px solid var(--color-9);
     &::placeholder {
       transform: translateY(-100%) scale(0.9);
-      color: var(--color-6);
+      color: var(--color-9);
       // font-size: 12px;
     }
   }
   &::selection {
-    background-color: var(--color-6);
+    background-color: var(--color-9);
   }
-  caret-color: var(--color-6);
+  caret-color: var(--color-9);
 }
 
 button[type="submit"] {
