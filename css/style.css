@@ -173,7 +173,7 @@ input[type=email] {
   padding: 20px 10px 20px 20px;
   border-radius: 16px;
   transition: outline var(--transition-1);
-  caret-color: var(--color-6);
+  caret-color: var(--color-9);
 }
 
 input[type=email]::-moz-placeholder {
@@ -191,30 +191,30 @@ input[type=email]::placeholder {
 }
 
 input[type=email]:focus {
-  outline: 2px solid var(--color-6);
+  outline: 2px solid var(--color-9);
 }
 
 input[type=email]:focus::-moz-placeholder {
   transform: translateY(-100%) scale(0.9);
-  color: var(--color-6);
+  color: var(--color-9);
 }
 
 input[type=email]:focus:-ms-input-placeholder {
   transform: translateY(-100%) scale(0.9);
-  color: var(--color-6);
+  color: var(--color-9);
 }
 
 input[type=email]:focus::placeholder {
   transform: translateY(-100%) scale(0.9);
-  color: var(--color-6);
+  color: var(--color-9);
 }
 
 input[type=email]::-moz-selection {
-  background-color: var(--color-6);
+  background-color: var(--color-9);
 }
 
 input[type=email]::selection {
-  background-color: var(--color-6);
+  background-color: var(--color-9);
 }
 
 button[type=submit] {
@@ -1053,7 +1053,8 @@ body.__lock {
   padding: 2rem 2.7rem;
   background: var(--color-12);
   border-radius: 16px;
-  transition: background-color var(--transition-1);
+  transition: box-shadow var(--transition-2);
+  box-shadow: inset 0 0 var(--color-9);
 }
 
 .categories {
@@ -1854,7 +1855,7 @@ footer {
   }
 
   .categories-top a:hover {
-    background-color: var(--color-9);
+    box-shadow: inset 250px 0 var(--color-9);
   }
 
   .categories a:hover {
